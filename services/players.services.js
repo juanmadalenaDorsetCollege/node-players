@@ -9,8 +9,8 @@ const getPlayersById = async (id) => {
 }
 
 const addPlayer = async (player) => {
-    const { rank, firstname, lastname, age, club, trophies, nationality } = player
-    return new playerModel({ rank, firstname, lastname, age, club, trophies, nationality }).save()
+    const { rank, firstname, lastname, age, club, trophies, nationality, image } = player
+    return new playerModel({ rank, firstname, lastname, age, club, trophies, nationality, image }).save()
 }
 
 const updatePlayer = async (id, player) => {
